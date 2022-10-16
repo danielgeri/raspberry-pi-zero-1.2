@@ -1,0 +1,18 @@
+steps:
+1. install debian buster lite from raspberry pi image installer
+2. add empty file called "ssh" - this allows you to ssh initially
+3. https://www.instructables.com/The-Ultimate-Headless-RPi-Zero-Setup-for-Beginners/
+
+
+create file called wpa_supplicant.conf
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+ssid="LeosPlace"
+scan_ssid=1
+key_mgmt=WPA-PSK
+psk="Baconthebest"
+}
+```
